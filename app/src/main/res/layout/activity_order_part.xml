@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EBCB">
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="119dp"
+        android:layout_height="73dp"
+        android:text="Update"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="119dp"
+        android:layout_height="73dp"
+        android:text="Delete"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:background="@drawable/background3"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/logo3"
+            android:layout_width="218dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Espresso Lab "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewlogo3"
+            android:layout_width="97dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/coffecup" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="361dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="OrderName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Order Price"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="351dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Quantity"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="336dp" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="119dp"
+        android:layout_height="73dp"
+        android:text="Confirm"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="455dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
